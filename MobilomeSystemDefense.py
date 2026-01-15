@@ -4,7 +4,7 @@
 # -*- coding: utf-8 -*-
 # CREATED BY: J-Alexander Garcia-Zea
 # jagarciaz2@eafit.edu.co
-# python 38
+# python 3.8
 
 ##################################################################################################################################
 
@@ -390,21 +390,3 @@ df_paninmune_updated.to_csv("df_paninmune_final_rectificador.csv", index=False)
 
 ############################################################################################################################
 
-def data_network_bipartite(df_paninmune_update):
-    # Seleccionar las columnas deseadas en el orden especificado
-    columns_to_select = [
-        "sys_id", "subtype", "name_of_profiles_in_sys", "sys_beg_final", 
-        "sys_end_final", "init_all_pos_around_island", "end_all_pos_around_island", 
-        "upstream_genes_names", "downstream_genes_names", "specie"
-    ]
-    
-    # Crear el nuevo DataFrame con las columnas seleccionadas
-    df_bipartite = df_paninmune_update[columns_to_select].copy()
-    
-    return df_bipartite
-
-# Llamada a la función 
-df_bipartite_network = data_network_bipartite(df_paninmune_updated)
-
-# create csv for df_bipartite_network
-df_bipartite_network.to_csv("df_bipartite_network_rectficador.csv", index=False)
