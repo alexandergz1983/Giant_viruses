@@ -1,4 +1,7 @@
 # Giant_viruses
+
+1. MobilomeSystemDefense.py: MGE notes around defense systems
+   
 Script for analyzing MGE associated with defense systems, using data obtained from DefenseFinder or PADLOC. 
 
 This script is used to search for MGEs that span five genes upstream and downstream of each defense system (a surrounding window of ten genes) and compare them with the MobileOG-db database. This database contains proteins that mediate functions essential for MGEs: (i) integration and excision (IE) from one genetic locus to another; (ii) nucleic acid replication, recombination, or repair (RRR); (iii) transfer between organisms (T); (iv) stability, transfer, or defense elements (STD); and (v) phage-specific biological processes (P) (e.g., genome packaging or lysis and lysogeny), as well as the transcriptional regulators associated with these processes. Next, the developed script was used to quantify the aforementioned proteins in the genomes of giant viruses. Sites were separated into three categories (integrative, prophage, or conjugative) if they matched “integration,” “phage,” or “conjugation” in their main category annotation.
