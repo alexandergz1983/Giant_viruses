@@ -1,6 +1,6 @@
 # Giant_viruses
 
-1. MobilomeSystemDefense.py: MGE notes around defense systems
+**1. MobilomeSystemDefense.py: MGE notes around defense systems**
    
 **Script for analyzing MGE associated with defense systems, using data obtained from DefenseFinder or PADLOC.**
 
